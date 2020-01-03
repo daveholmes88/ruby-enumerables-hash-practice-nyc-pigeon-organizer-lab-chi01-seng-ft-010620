@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
     thing1.each do |attribute, data1|
       hash.each do |memo, pair|
         if thing == :color && data1.include?(memo)
-          hash[memo][:color] << "attribute"
+          hash[memo][:color] << "#{attribute}"
         end
       end
     end
