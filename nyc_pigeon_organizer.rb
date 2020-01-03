@@ -19,8 +19,8 @@ def nyc_pigeon_organizer(data)
     }
     i += 1
   end
-  data.reduce({}) do |memo, pair|
-    binding.pry 
+  data.each do |attribute, data|
+    binding.pry
   end
   hash
 end
