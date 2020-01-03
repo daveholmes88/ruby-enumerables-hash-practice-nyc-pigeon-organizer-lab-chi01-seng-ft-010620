@@ -21,7 +21,7 @@ def nyc_pigeon_organizer(data)
   end
   data.each do |memo, pair|
     pair.each do |color, result|
-      hash.each do |memo, pair|   
+      hash.each do |memo, pair|
         if result.include?(memo)
           hash[memo][:color] << color 
     end
