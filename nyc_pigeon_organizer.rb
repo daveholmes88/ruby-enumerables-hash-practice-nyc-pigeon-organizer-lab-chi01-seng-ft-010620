@@ -19,12 +19,13 @@ def nyc_pigeon_organizer(data)
     }
     i += 1
   end
-  data.each do |memo, pair|
-    pair.each do |color, result|
-      hash.each do |memo, pair|
-        if result.include?(memo)
-          hash[memo][:color] << color 
-    end
+  data.reduce({}) do |memo, pair|
+    pair.each do |attribute, data|
+      if attribute ==:color
+        data.each do |color|
+          binding.pry 
+          if color.include?
+      pair[n].include? == 
   end
   hash
 end
