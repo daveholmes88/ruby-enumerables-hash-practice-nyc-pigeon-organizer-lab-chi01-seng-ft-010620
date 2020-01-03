@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
         data.each do |color|
           binding.pry 
           if color.include?
-      pair[n].include? == 
+      pair[n].include? ==
   end
   hash
 end
