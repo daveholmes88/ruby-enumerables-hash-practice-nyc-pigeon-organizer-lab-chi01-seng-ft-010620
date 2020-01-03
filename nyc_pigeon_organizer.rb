@@ -37,5 +37,14 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  data.each do |thing, thing1|
+    thing1.each do |attribute, data1|
+      hash.each do |memo, pair|
+        if thing == :lives && data1.include?(memo)
+          hash[memo][:lives] << "#{attribute}"
+        end
+      end
+    end
+  end
   hash
 end
