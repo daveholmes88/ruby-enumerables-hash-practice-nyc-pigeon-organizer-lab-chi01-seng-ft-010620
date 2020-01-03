@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
   data.each do |thing, thing1|
     thing1.each do |attribute, data1|
     binding.pry
-    end 
+    end
   end
   hash
 end
